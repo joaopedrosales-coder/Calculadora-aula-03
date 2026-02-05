@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="calculadora">
+        <input type="text" id="display" disabled>
+
+        <div class="botoes">
+            <button class="limpar" onclick="limpar()">C</button>
+            <button class="operador" onclick="adicionar('/')">÷</button>
+
+            <button class="numero" onclick="adicionar('7')">7</button>
+            <button class="numero" onclick="adicionar('8')">8</button>
+            <button class="numero" onclick="adicionar('9')">9</button>
+            <button class="operador" onclick="adicionar('*')">×</button>
+
+            <button class="numero" onclick="adicionar('4')">4</button>
+            <button class="numero" onclick="adicionar('5')">5</button>
+            <button class="numero" onclick="adicionar('6')">6</button>
+            <button class="operador" onclick="adicionar('-')">−</button>
+
+            <button class="numero" onclick="adicionar('1')">1</button>
+            <button class="numero" onclick="adicionar('2')">2</button>
+            <button class="numero" onclick="adicionar('3')">3</button>
+            <button class="operador" onclick="adicionar('+')">+</button>
+
+            <button class="numero" onclick="adicionar('0')">0</button>
+            <button class="numero" onclick="adicionar('.')">.</button>
+            <button class="igual" onclick="calcular()">=</button>
+        </div>
+    </div>
+
+    <!-- Link para o JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+
